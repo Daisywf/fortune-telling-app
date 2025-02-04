@@ -1,20 +1,23 @@
-
 <template>
   <view class="container">
-    <!-- 顶部banner -->
-    <view class="banner">
-      <image src="https://img.freepik.com/free-vector/magic-crystal-ball-fortune-telling-flat-vector-illustration_74855-17111.jpg" mode="aspectFill"></image>
-      <view class="slogan">专为新时代年轻人打造的命理工具</view>
+    <!-- logo区域 -->
+    <view class="logo-area">
+      <image 
+        class="logo" 
+        src="https://drive.google.com/file/d/1UJp9ZITPGg4o8duCqbqCr3RaV_LuZegr/view?usp=drive_link" 
+        mode="aspectFit"
+      ></image>
+      <view class="slogan">Scientific Astrology for Modern Life</view>
     </view>
     
     <!-- 功能入口区 -->
     <view class="function-area">
       <view class="function-item" @click="navigateTo('/pages/mbti/index')">
-        <image src="/static/images/mbti-icon.png"></image>
+        <image src="https://img.icons8.com/ios/100/psychological-state.png"></image>
         <text>MBTI测试</text>
       </view>
       <view class="function-item" @click="navigateTo('/pages/fortune/index')">
-        <image src="/static/images/fortune-icon.png"></image>
+        <image src="https://img.icons8.com/ios/100/crystal-ball.png"></image>
         <text>命理五行</text>
       </view>
     </view>
@@ -77,24 +80,26 @@ export default {
 <style lang="scss">
 .container {
   padding: 20rpx;
+  background-color: #1a1a2e;
+  min-height: 100vh;
+  color: #fff;
   
-  .banner {
-    position: relative;
-    height: 300rpx;
+  .logo-area {
+    padding: 60rpx 0;
+    text-align: center;
     
-    image {
-      width: 100%;
-      height: 100%;
-      border-radius: 20rpx;
+    .logo {
+      width: 400rpx;
+      height: 400rpx;
     }
     
     .slogan {
-      position: absolute;
-      bottom: 30rpx;
-      left: 30rpx;
-      color: #fff;
-      font-size: 32rpx;
-      font-weight: bold;
+      font-size: 28rpx;
+      color: rgba(255,255,255,0.8);
+      margin-top: 20rpx;
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text;
+      color: transparent;
     }
   }
   
@@ -105,22 +110,27 @@ export default {
     
     .function-item {
       text-align: center;
+      background: rgba(255,255,255,0.1);
+      padding: 30rpx;
+      border-radius: 20rpx;
+      width: 45%;
       
       image {
         width: 120rpx;
         height: 120rpx;
         margin-bottom: 20rpx;
+        filter: invert(1);
       }
       
       text {
         font-size: 28rpx;
-        color: #333;
+        color: #fff;
       }
     }
   }
   
   .input-area {
-    background: #fff;
+    background: rgba(255,255,255,0.1);
     padding: 30rpx;
     border-radius: 20rpx;
     
@@ -128,21 +138,25 @@ export default {
       font-size: 32rpx;
       font-weight: bold;
       margin-bottom: 30rpx;
+      color: #fff;
     }
     
     input, .picker {
       width: 100%;
       height: 80rpx;
-      border: 1rpx solid #eee;
+      border: 1rpx solid rgba(255,255,255,0.2);
       border-radius: 10rpx;
       margin-bottom: 20rpx;
       padding: 0 20rpx;
       box-sizing: border-box;
+      color: #fff;
+      background: rgba(255,255,255,0.05);
     }
     
     button {
       margin-top: 40rpx;
-      background: #6B238E;
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+      border: none;
       
       &::after {
         border: none;
