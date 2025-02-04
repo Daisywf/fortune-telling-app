@@ -1,7 +1,7 @@
 <template>
   <view class="user-container">
     <view class="user-info">
-      <image class="avatar" src="/static/images/default-avatar.png"></image>
+<image class="avatar" src="https://img.icons8.com/ios/100/user-circle--v1.png"></image>
       <view class="info">
         <view class="nickname">未登录</view>
         <view class="remaining-times">剩余次数：{{remainingQuota}}次</view>
