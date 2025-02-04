@@ -4,7 +4,7 @@
     <view class="logo-area">
       <image 
         class="logo" 
-        src="https://drive.google.com/file/d/1UJp9ZITPGg4o8duCqbqCr3RaV_LuZegr/view?usp=sharing" 
+        src="https://ibb.co/jvZwmm6p" 
         mode="aspectFit"
       ></image>
       <view class="slogan">Scientific Astrology for Modern Life</view>
