@@ -3,7 +3,7 @@
   <view class="container">
     <!-- 顶部banner -->
     <view class="banner">
-      <image src="/static/images/banner.jpg" mode="aspectFill"></image>
+      <image src="https://img.freepik.com/free-vector/magic-crystal-ball-fortune-telling-flat-vector-illustration_74855-17111.jpg" mode="aspectFill"></image>
       <view class="slogan">专为新时代年轻人打造的命理工具</view>
     </view>
     
